@@ -1,0 +1,11 @@
+.header {
+	border: 2px solid #f0a0a0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.user-name {
+	font-size: 1.3rem;
+	margin: auto 0.8rem;
+}
