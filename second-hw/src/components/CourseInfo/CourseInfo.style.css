@@ -1,0 +1,29 @@
+.coursesInfo_div {
+	margin: 2rem 0;
+	padding: 20px;
+	flex-wrap: wrap;
+	line-height: 1.5;
+	width: 100%;
+	border: 0.15rem solid rgb(69, 184, 184);
+}
+
+.coursesInfo {
+	display: flex;
+	width: 100%;
+	gap: 2rem;
+}
+.info-left {
+	width: 90%;
+}
+.info-right {
+	width: 60%;
+}
+
+.description {
+	padding: 2rem;
+}
+
+.info-title {
+	text-align: center;
+	font-size: 1.8rem;
+}

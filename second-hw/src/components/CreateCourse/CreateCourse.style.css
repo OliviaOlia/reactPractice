@@ -1,0 +1,73 @@
+.createCourse {
+	border: 2px solid #7fdbe9;
+	padding: 2rem;
+}
+.titleSection {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin: 1rem 0;
+}
+.titleSection .inp {
+	width: 100%;
+	margin: 0.6rem 0;
+}
+
+.descriptionSection textarea {
+	width: 100%;
+	border: 1px solid rgb(228, 228, 28);
+	margin: 0.6rem 0;
+}
+
+.authorDurationSection {
+	border: 2px solid #070d0e;
+	padding: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+.authorDurationSection div {
+	width: 50%;
+}
+
+.addAuthor {
+	text-align: center;
+}
+.addAuthor div {
+	width: 100%;
+}
+.addAuthor .inp {
+	width: 90%;
+	margin: 0.6rem 0;
+}
+.addAuthor div {
+	text-align: start;
+}
+
+.authors {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.duration div {
+	width: 100%;
+}
+.duration .inp {
+	width: 90%;
+	margin: 0.6rem 0;
+}
+.duration h3 {
+	text-align: center;
+}
+.convertDuration {
+	font-size: 1.5rem;
+}
+
+.courseAuthors {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.author {
+	width: 100%;
+}

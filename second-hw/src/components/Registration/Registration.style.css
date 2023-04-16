@@ -1,0 +1,24 @@
+.registration__container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem 0;
+	border: 0.15rem solid rgb(69, 184, 184);
+}
+
+.registration {
+	display: flex;
+	flex-direction: column;
+	gap: 1.4rem;
+}
+
+.registration .inp {
+	width: 100%;
+	margin: 0.6rem 0;
+}
+
+.registration .inp-div {
+	width: 100%;
+}
