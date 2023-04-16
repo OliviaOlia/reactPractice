@@ -9,7 +9,7 @@
 	align-items: flex-end;
 	margin: 1rem 0;
 }
-.titleSection div input {
+.titleSection .inp {
 	width: 100%;
 	margin: 0.6rem 0;
 }
@@ -36,7 +36,7 @@
 .addAuthor div {
 	width: 100%;
 }
-.addAuthor div input {
+.addAuthor .inp {
 	width: 90%;
 	margin: 0.6rem 0;
 }
@@ -52,7 +52,7 @@
 .duration div {
 	width: 100%;
 }
-.duration div input {
+.duration .inp {
 	width: 90%;
 	margin: 0.6rem 0;
 }

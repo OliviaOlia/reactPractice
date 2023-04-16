@@ -1,14 +1,14 @@
 import './Input.style.css';
 
-function Input(props) {
+function Input({ lblText, type, placeholderText, onChange }) {
 	return (
 		<div className='inp-div'>
-			<label className='lbl'>{props.lblText}</label>
+			<label className='lbl'>{lblText}</label>
 			<input
 				className='inp'
-				type={props.type}
-				placeholder={props.placeholderText}
-				onChange={props.onChange}
+				type={type}
+				placeholder={placeholderText}
+				onChange={onChange}
 			></input>
 		</div>
 	);

@@ -11,10 +11,10 @@
 	width: 60%;
 }
 
-.searchInput div {
+.inp-div {
 	width: 70%;
 }
-.searchInput div input {
+.inp {
 	width: 100%;
 }
 
@@ -22,6 +22,6 @@
 	width: 28%;
 }
 
-.searchInput label {
+.searchInput .lbl {
 	display: none;
 }

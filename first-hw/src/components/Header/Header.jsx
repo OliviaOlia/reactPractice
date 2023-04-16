@@ -10,7 +10,7 @@ function Header() {
 			<Logo />
 			<div>
 				<span className='user-name'>Olia</span>
-				<Button text='Logout' onClick={funcLogout}></Button>
+				<Button onClick={funcLogout}>Logout</Button>
 			</div>
 		</header>
 	);

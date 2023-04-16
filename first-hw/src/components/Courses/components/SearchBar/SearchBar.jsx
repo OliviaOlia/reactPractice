@@ -2,6 +2,7 @@ import Input from '../../../../common/Input/Input';
 import Button from '../../../../common/Button/Button';
 
 import './SearchBar.style.css';
+import { useCallback } from 'react';
 
 function SearchBar({
 	searchPhrase,
@@ -9,6 +10,14 @@ function SearchBar({
 	handleSeachChange,
 	setAddCourse,
 }) {
+	const submitHandler = useCallback(
+		() => handleSubmit(searchPhrase),
+		[searchPhrase, handleSubmit]
+	);
+	const newCourseHandler = useCallback(
+		() => setAddCourse(true),
+		[setAddCourse]
+	);
 	return (
 		<div className='searchBar'>
 			<div className='searchInput'>
@@ -18,15 +27,10 @@ function SearchBar({
 					value={searchPhrase}
 					onChange={handleSeachChange}
 				/>
-				<Button
-					text='Search'
-					onClick={() => {
-						handleSubmit(searchPhrase);
-					}}
-				/>
+				<Button onClick={submitHandler}>Search</Button>
 			</div>
 			<div>
-				<Button text='Create New Course' onClick={() => setAddCourse(true)} />
+				<Button onClick={newCourseHandler}>Create New Course</Button>
 			</div>
 		</div>
 	);

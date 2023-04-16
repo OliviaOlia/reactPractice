@@ -23,6 +23,7 @@
 	justify-content: space-between;
 }
 .label {
+	display: block;
 	font-weight: bold;
 	margin-right: 0.4rem;
 }
