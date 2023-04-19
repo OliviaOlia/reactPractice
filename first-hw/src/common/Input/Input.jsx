@@ -1,11 +1,11 @@
-import './Input.style.css';
+import style from './Input.module.css';
 
 function Input({ lblText, type, placeholderText, onChange }) {
 	return (
 		<div className='inp-div'>
-			<label className='lbl'>{lblText}</label>
+			<label className={style.lbl}>{lblText}</label>
 			<input
-				className='inp'
+				className={style.inp}
 				type={type}
 				placeholder={placeholderText}
 				onChange={onChange}

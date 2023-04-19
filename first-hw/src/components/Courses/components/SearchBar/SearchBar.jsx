@@ -1,7 +1,7 @@
 import Input from '../../../../common/Input/Input';
 import Button from '../../../../common/Button/Button';
 
-import './SearchBar.style.css';
+import styles from './SearchBar.module.css';
 import { useCallback } from 'react';
 
 function SearchBar({
@@ -19,8 +19,8 @@ function SearchBar({
 		[setAddCourse]
 	);
 	return (
-		<div className='searchBar'>
-			<div className='searchInput'>
+		<div className={styles['searchBar']}>
+			<div className={styles['searchInput']}>
 				<Input
 					type='text'
 					placeholderText='Enter course name or ID...'

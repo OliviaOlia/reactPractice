@@ -1,9 +1,9 @@
 import logo from './logo.jpg';
 
-import './Logo.style.css';
+import styles from './Logo.module.css';
 
 function Logo() {
-	return <img src={logo} className='logo' alt='logo' />;
+	return <img src={logo} className={styles.logo} alt='logo' />;
 }
 
 export default Logo;

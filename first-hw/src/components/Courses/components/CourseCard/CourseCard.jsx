@@ -4,7 +4,7 @@ import Button from '../../../../common/Button/Button';
 import convertDuration from '../../../../helpers/convertDuration';
 import { mockedAuthorsList } from '../../../../constants';
 
-import './CourseCard.style.css';
+import styles from './CourseCard.module.css';
 
 function CourseCard({
 	title,
@@ -28,22 +28,22 @@ function CourseCard({
 	);
 
 	return (
-		<section className='course-card'>
-			<div className='card-left'>
-				<span className='title'>{title}</span>
-				<p className='card-description'>{description}</p>
+		<section className={styles['course-card']}>
+			<div className={styles['card-left']}>
+				<span className={styles['title']}>{title}</span>
+				<p className={styles['card-description']}>{description}</p>
 			</div>
-			<div className='card-right'>
-				<p className='authors'>
-					<span className='label'>Authors:</span>
+			<div className={styles['card-right']}>
+				<p className={styles['authors']}>
+					<span className={styles['label']}>Authors:</span>
 					{getAuthorsNamesMemo}
 				</p>
-				<p className='duration'>
-					<span className='label'>Duration:</span>
+				<p className={styles['duration']}>
+					<span className={styles['label']}>Duration:</span>
 					{calcDurationMemo} hours
 				</p>
-				<p className='created'>
-					<span className='label'>Created:</span>
+				<p className={styles['created']}>
+					<span className={styles['label']}>Created:</span>
 					{creationDate}
 				</p>
 				<Button>Show course</Button>

@@ -9,7 +9,7 @@ import { reducer } from './reducer';
 
 import { mockedAuthorsList, mockedCoursesList } from '../../constants';
 
-import './CreateCourse.style.css';
+import styles from './CreateCourse.module.css';
 
 function CreateCourse({ setAddCourse }) {
 	const defaultNewCourse = {
@@ -41,7 +41,7 @@ function CreateCourse({ setAddCourse }) {
 
 	const listAllAuthors = (authorsList, btnText, changeAuthorsList) => {
 		return authorsList.map((author) => (
-			<div key={author.id} className='author'>
+			<div key={author.id} className={styles['author']}>
 				<span>{author.name}</span>
 				<Button
 					onClick={(e) => {
@@ -120,8 +120,8 @@ function CreateCourse({ setAddCourse }) {
 		[state, setAddCourse]
 	);
 	return (
-		<form className='createCourse'>
-			<div className='titleSection'>
+		<form className={styles['createCourse']}>
+			<div className={styles['titleSection']}>
 				<Input
 					lblText='Title:'
 					type='text'
@@ -133,7 +133,7 @@ function CreateCourse({ setAddCourse }) {
 				/>
 				<Button onClick={handleCreateCourse}>Create course</Button>
 			</div>
-			<div className='descriptionSection'>
+			<div className={styles['descriptionSection']}>
 				<label htmlFor='description'>Description:</label>
 				<textarea
 					id='description'
@@ -148,8 +148,8 @@ function CreateCourse({ setAddCourse }) {
 					}}
 				/>
 			</div>
-			<section className='authorDurationSection'>
-				<div className='addAuthor'>
+			<section className={styles['authorDurationSection']}>
+				<div className={styles['addAuthor']}>
 					<h3>Add Author</h3>
 					<Input
 						lblText='Author name:'
@@ -162,11 +162,11 @@ function CreateCourse({ setAddCourse }) {
 					/>
 					<Button onClick={handleCreateAuthor}>Create author</Button>
 				</div>
-				<div className='authors'>
+				<div className={styles['authors']}>
 					<h3>Authors</h3>
 					{listNotAddedAuthors}
 				</div>
-				<div className='duration'>
+				<div className={styles['duration']}>
 					<h3>Duration</h3>
 					<Input
 						lblText='Duration:'
@@ -175,9 +175,11 @@ function CreateCourse({ setAddCourse }) {
 						onChange={handleDuration}
 						required
 					/>
-					<p className='convertDuration'>Duration: {converDurationMemo}</p>
+					<p className={styles['convertDuration']}>
+						Duration: {converDurationMemo}
+					</p>
 				</div>
-				<div className='courseAuthors'>
+				<div className={styles['courseAuthors']}>
 					<h3>Course Authors</h3>
 					{!state.authors.length ? (
 						<p>Author list is empty</p>

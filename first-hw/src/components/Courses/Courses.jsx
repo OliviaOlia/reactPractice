@@ -4,7 +4,7 @@ import CourseCard from './components/CourseCard/CourseCard';
 import SearchBar from './components/SearchBar/SearchBar';
 
 import { mockedCoursesList } from '../../constants';
-import './Courses.style.css';
+import styles from './Courses.module.css';
 
 function Courses({ setAddCourse }) {
 	const [courses, getCourses] = useState([]);
@@ -49,7 +49,7 @@ function Courses({ setAddCourse }) {
 	});
 	return (
 		<>
-			<div className='courses'>
+			<div className={styles['courses']}>
 				<SearchBar
 					searchPhrase={searchPhrase}
 					handleSubmit={handleSubmit}
