@@ -1,0 +1,29 @@
+.course-card {
+	padding: 0.75rem 1rem;
+	border: 2px solid rgb(122, 224, 122);
+	margin: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 90%;
+}
+.card-left {
+	width: 70%;
+	padding: 0.8rem;
+}
+.title {
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+
+.card-right {
+	padding: 0.8rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.label {
+	display: block;
+	font-weight: bold;
+	margin-right: 0.4rem;
+}
